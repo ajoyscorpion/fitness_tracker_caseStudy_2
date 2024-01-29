@@ -6,16 +6,16 @@ In this case study, I worked for a fictional company. In order to answer the bus
 # Ask
 ### Guiding Questions:
 #### • What is the problem you are trying to solve?
-To achieve the objective of determining profiles for annual members and casual riders and creating a marketing strategy to convert casual riders into annual members
+Bellabeat seeks insights into how users of smart devices utilize their devices to monitor and enhance their health and well-being. This understanding is crucial for identifying potential areas of growth and innovation for the company.
 
 #### • How can your insights drive business decisions?
 
-Based on the insights the marketing team will put up a stratergy in increasing the amount of annual members.
+Will analyze how users are utilizing the Leaf smart device. This will involve finding relevant patterns and trends in whatever information can be found in the dataset.
 
 ### Deliverable
 #### • A clear statement of the business task
 
-Analyze variations in behavior between annual members and casual riders to formulate an effective marketing strategy aimed at boosting annual membership subscriptions.
+Will propose recommendations for Bellabeat’s marketing strategy.
 
 
 
@@ -24,11 +24,11 @@ Analyze variations in behavior between annual members and casual riders to formu
 ### Guiding questions
 #### • Where is your data located?
 
-The data is stored on Kaggle as a dataset named [tripdata_2020](https://www.kaggle.com/datasets/raymondmutyaba/divvytripdata).
+The data is stored on Kaggle as a dataset named [FitBit Fitness Tracker Data](https://www.kaggle.com/datasets/arashnic/fitbit).
 
 #### • How is the data organized?
 
-The data consists of 7 csv files. The files for the months April to October.
+The data consists of 18 csv files. Used only three of them namely dailyActivity_merged.csv, sleepDay_merged.csv, weightLogInfo_merged.csv .
 
 #### • How did you verify the data’s integrity?
 
@@ -36,12 +36,13 @@ The dataset was thoroughly reviewed, ensuring uniformity in column structure, in
 
 #### • How does it help you answer your question?
 
-The data will allow us to examine annual members and casual riders to determine if there are any key characteristics regarding the riders, bike usage, and needs.
+One valuable feature of smart wearable devices is their ability to motivate users to adopt healthier lifestyles. A potential enhancement could involve implementing a peer comparison feature. This feature aims to encourage users to elevate their activity levels by providing comparisons with peers, fostering a sense of friendly competition and motivation to improve overall health
 
 ### Deliverable
 #### * A description of all data sources used
 
-The data source consists of 7 CSV files. The period starts at April 2020 and runs until October 2020.
+Out of the 18 available CSV files, I utilized only three: dailyActivity_merged.csv, sleepDay_merged.csv, and weightLogInfo_merged.csv for the analysis.
+
 
 
 
@@ -54,61 +55,38 @@ The individual CSV files were consolidated into one to facilitate easier manipul
 I opted for Python and Jupyter Notebook due to the dataset's size, which is too large for spreadsheets. The use of Python enables in-depth analysis and manipulation capabilities.
 
 #### • What steps have you taken to ensure that your data is clean?
-I performed data cleaning, which involved removing NA values and duplicates. Additionally, I formatted the time and dates in the dataset.
+I performed data cleaning, which involved removing NA values and duplicates. Additionally, I formatted the time and dates in the datasets inorder to merge the content and dropped few columns.
 
 #### • How can you verify that your data is clean and ready to analyze?
-The steps taken for cleaning process can be reffered in the attached [notebook](https://github.com/ajoyscorpion/bike_share_data_analysis/blob/main/bikeshare%20navigate%20speedy%20success.ipynb).
+The steps taken for cleaning process can be reffered in the attached [notebook](https://github.com/ajoyscorpion/fitness_tracker_caseStudy_2/blob/main/fitness.ipynb).
 
 #### • Have you documented your cleaning process so you can review and share those results?
 The document has been cleaned
 
 ### Deliverable
-Documentation of any cleaning or manipulation of data can be reffered in the attached [notebook](https://github.com/ajoyscorpion/bike_share_data_analysis/blob/main/bikeshare%20navigate%20speedy%20success.ipynb)
+Documentation of any cleaning or manipulation of data can be reffered in the attached [notebook](https://github.com/ajoyscorpion/fitness_tracker_caseStudy_2/blob/main/fitness.ipynb)
 
 
 # Share
 ### Guiding questions
-● Were you able to answer the question of how annual members and casual riders use Cyclistic bikes differently?
-
-Yes, several distinctions between casual riders and annual members were identified through the analysis.
 
 ● What story does your data tell?
 
-The data reveals that a significant portion of casual riders exhibits a higher average ride duration, presenting a potential target audience for the digital marketing campaign.
+The analysis reveals a direct correlation between the distance traveled and the calories burned. As the distance increases, there is a corresponding increase in the calories burnt. Interestingly, individuals who sleep less than 6 hours per day and those who sleep more than 8 hours per day tend to burn fewer calories compared to individuals with a sleep duration between 6 and 8 hours. This suggests that the duration of sleep may play a role in the relationship between sleep and calorie expenditure, with optimal results observed in the 6-8 hours sleep range for similar distances covered.
 
-● Why would casual riders buy Cyclistic annual memberships?
+● How do your findings relate to your original question?
 
-
-Casual riders may find value in purchasing an annual membership, given that, on average, they use the bikes for a longer duration compared to members. Additionally, the longest individual ride recorded was by a casual member, indicating a potential interest in the benefits offered by an annual membership.
-
-● How can Cyclistic use digital media to influence casual riders to become members?
-
-A targeted digital media campaign highlighting the benefits of an annual membership, specifically tailored to casual riders who frequently use the bikes for extended durations, could be an effective strategy. This approach aims to capture the attention of casual riders who may find value in the extended access and perks provided by an annual membership.
+The analysis indicates a clear relationship between sleep duration and calories burned. It suggests that monitoring and optimizing sleep can be beneficial for weight loss goals. Individuals who achieve an optimal sleep duration may experience better outcomes in terms of calories burned, emphasizing the importance of quality sleep in overall health and wellness. This information can be effectively communicated to customers, highlighting the positive impact of adequate sleep on their weight loss journey and encouraging them to prioritize and track their sleep patterns for better health outcomes.
 
 ● Can data visualization help you share your findings?
 
-Using data visualization provides a clear and concise way to compare the differences between annual members and casual riders. This facilitates effective communication and decision-making, aligning with the goal of designing a targeted marketing strategy to convert casual riders into annual members.
+Using data visualization provides a clear and concise way to analyse the realtionship between sleep, daily activity and calories burned
 
 ### Deliverable
-Visualization are attached in the [notebook](https://github.com/ajoyscorpion/bike_share_data_analysis/blob/main/bikeshare%20navigate%20speedy%20success.ipynb).
+Visualization are attached in the [notebook](https://github.com/ajoyscorpion/fitness_tracker_caseStudy_2/blob/main/fitness.ipynb).
 
 # Act
-### Guiding questions¶
-● What is your final conclusion based on your analysis?
 
-The analysis indicates a significant opportunity for Cyclistic to convert casual riders into annual members. The data reveals that certain casual riders exhibit high engagement, using the bike-sharing service more frequently than annual members.
-
-● How could your team and business apply your insights?
-
-To attract and convert long-duration casual riders into annual members, Cyclistic should launch a targeted digital marketing campaign emphasizing the advantages of becoming a member. The campaign will highlight the benefits of membership over casual riding, particularly for those who use the service for extended periods. 
-
-### Deliverable
-Your top three recommendations based on your analysis.
-
-● Launch an educational campaign targeted at casual riders to inform them about the benefits of annual memberships. 
-
-● Implement a targeted advertising campaign at the popular start stations frequented by casual riders. This campaign should highlight the value and advantages of annual memberships
-
-● Design a promotional campaign to incentivize annual members to use the service more frequently, especially during less popular months. Offer rewards, discounts, or exclusive benefits for members who continue using the bikes during off-peak periods. 
+The analysis highlights a compelling connection between sleep and calories burned, presenting an opportunity for Bellabeat to promote the significance of adequate sleep in achieving weight loss goals. Implementing a targeted marketing strategy focusing on educating users about the importance of sufficient sleep, how to attain it, and showcasing Bellabeat's tracking capabilities can enhance user engagement. Additionally, integrating a peer comparison feature can further motivate customers to elevate their activity levels, fostering healthier lifestyles and contributing to their overall well-being.
 
 
